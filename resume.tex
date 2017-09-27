@@ -1,0 +1,136 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0cm}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------
+% Custom Commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{2pt}}
+  }
+}
+
+\newcommand{\resumeSubHeading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------------------------------
+
+\begin{document}
+
+%------HEADING---------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Jacob Grunwald} & Email : \href{mailto:jacob.grunwald@colorado.edu}{jacob.grunwald@colorado.edu}\\
+  \href{https://github.com/jgrun}{https://github.com/jgrun} & Mobile : 832-585-4297\\
+\end{tabular*}
+
+%---------EDUCATION---------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubHeading
+      {University of Colorado, Boulder}{Boulder, CO}
+      {Bachelor of Science in Electrical and Computer Engineering;  GPA: 3.194}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+%----------EXPERIENCE--------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubHeading
+      {Halleck Willard Inc.}{Frederick, CO}
+      {Embedded Systems Engineering Intern}{May 2017 - Aug. 2017}
+      \resumeItemListStart
+        \resumeItem{Eggbot}
+          {Ported code for the Eggbot from Evil Mad Scientists to a Renesas S1 ARM cortex microprocessor. Modified code to take advantage of multithreading and an RTOS.}
+        \resumeItem{PCB Design}
+          {Designed a microcontroller to mimic the hardware of the Eggbot using Altium. Designed a connector shield for a Renesas development board with Altium.}
+        \resumeItem{Module Guides}
+          {Helped to test and verify Renesas Synergy Module Guides. Ran test code and proofread module documentation.}
+      \resumeItemListEnd
+
+    \resumeSubHeading
+      {Colorado Space Grant Consortium RocketSat11}{Boulder, CO}
+      {Avionics Team Member}{Sep. 2016 - May 2017}
+      \resumeItemListStart
+        \resumeItem{Software}
+          {Designed and tested software to integrate several sensors and cameras into a sounding rocket payload while maximizing sampling frequency}
+        \resumeItem{Hardware}
+          {Assisted in design and testing of hardware components for a sounding rocket payload. Focused particularly on testing communication protocols and integration of sensors with same communication protocols.}
+      \resumeItemListEnd
+
+    \resumeSubHeading
+    {Electrical, Computer, and Energy Engineering Department}{Boulder, CO}
+    {Course Assistant}{Sep. 2015 - Dec. 2016}
+    \resumeItemListStart
+      \resumeItem{CU Arduino}
+        {Designed and built an Arduino platform for use in the departments freshman projects course.}
+      \resumeItem{Student Help}
+        {Assisted students in class work for ECEN 1400, a freshman electrical engineering projects class. Work included helping students to understand electrical engineering and programming concepts.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming}{: C, some Assembly, Verilog}
+      \hfill
+      \textbf{CAD}{: Quartus Design, Altium Design}
+      \hfill
+      \textbf{OS}{: Windows, Linux}
+    }
+  \resumeSubHeadingListEnd
+
+%----------LEADERSHIP---------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubItem{President of the Electrical Engineering Student Society}
+      {Organized and led social, technical, and networking events for the Electrical, Computer, and Energy Engineering Department at CU Boulder}
+    \resumeSubItem{Fundraising}
+      {Led a team of 9 students in raising \$8,000 for LIMBS International, a non-profit group dedicated to donating artificial legs to those in need, over the course of six months.}
+    \resumeSubItem{Teamwork}
+      {Worked with a group of 12 others to create and run pre-teen oriented programs at South Regional Library of the Montgomery County Library System for four years.}
+  \resumeSubHeadingListEnd
+\end{document}
